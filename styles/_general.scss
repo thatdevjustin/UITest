@@ -1,0 +1,7 @@
+﻿row {
+    @include flexbox();
+}
+column{
+    @extend row;
+    @include flex-direction(column);
+}
