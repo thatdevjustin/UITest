@@ -194,7 +194,7 @@ content {
       display: block; }
     content #shrinkLeft:checked + #sideNav .shrink {
       left: 100%;
-      right: initial;
+      right: auto;
       background: rgba(0, 0, 0, 0.1);
       transform: rotate(180deg);
       color: black; }
@@ -492,7 +492,7 @@ content {
         animation-duration: .2s; }
         content #mainContent .center-content #shrinkRight:checked + .social .shrink {
           right: 100%;
-          left: initial;
+          left: auto;
           transform: rotate(180deg); }
         content #mainContent .center-content #shrinkRight:checked + .social > div {
           display: none; }

@@ -89,7 +89,7 @@ content{
             }
             .shrink{
                 left: 100%;
-                right: initial;
+                right: auto;
                 background: rgba(0,0,0,0.1);
                 transform: rotate(180deg);
                 color: black;
@@ -417,7 +417,7 @@ content{
                 animation-duration:.2s;
                 .shrink{
                     right: 100%;
-                    left: initial;
+                    left: auto;
                     transform: rotate(180deg);
                 }
                 > div{
