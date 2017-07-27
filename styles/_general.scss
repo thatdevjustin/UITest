@@ -5,3 +5,44 @@ column{
     @extend row;
     @include flex-direction(column);
 }
+.user-image{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+}
+.one-third{
+    width: 33%;
+}
+.two-thirds{
+    width: 66%;
+}
+.one-quarter{
+    width: 25%;
+}
+.two-quarter, .half {
+    width: 50%;
+}
+.three-quarter {
+    width: 75%;
+}
+.one-fifth{
+    width: 20%;
+}
+.post-button {
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #66676b;
+    cursor: pointer;
+}
+.hide{
+    position: absolute;
+    left: -9999999px;
+    opacity: 0;
+}
+.shrink{
+    cursor: pointer;
+}

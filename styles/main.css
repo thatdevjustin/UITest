@@ -1,10 +1,10 @@
-﻿html, body, div, span, applet, object, iframe,
+﻿html, body, div, span, content #shrinkLeft:checked + #sideNav h5, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol, ul, li, content #mainContent .center-content .social .recent-items row p, content #mainContent .center-content .social .recent-items column p,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -15,7 +15,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -53,4 +53,447 @@ column {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.user-image {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: red; }
+
+.one-third {
+  width: 33%; }
+
+.two-thirds {
+  width: 66%; }
+
+.one-quarter {
+  width: 25%; }
+
+.two-quarter, .half {
+  width: 50%; }
+
+.three-quarter {
+  width: 75%; }
+
+.one-fifth {
+  width: 20%; }
+
+.post-button, content #mainContent .center-content .dashboard .posts .col-title span.gear-icon, content #mainContent .center-content .dashboard .posts .col-title #shrinkLeft:checked + #sideNav h5.gear-icon, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .col-title h5.gear-icon {
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #66676b;
+  cursor: pointer; }
+
+.hide {
+  position: absolute;
+  left: -9999999px;
+  opacity: 0; }
+
+.shrink {
+  cursor: pointer; }
+
+@keyframes shrinkLeft {
+  from {
+    width: 20%; }
+  to {
+    width: 50px; } }
+
+@keyframes growRight {
+  from {
+    width: 50px; }
+  to {
+    width: 20%; } }
+
+@keyframes shrinkRight {
+  from {
+    width: 33%; }
+  to {
+    width: 0; } }
+
+@keyframes growLeft {
+  from {
+    width: 0; }
+  to {
+    width: 33%; } }
+
+html {
+  height: 100%; }
+  html body {
+    min-height: 100%;
+    width: 100%; }
+
+content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%; }
+  content .header {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    height: 75px; }
+  content #sideNav {
+    background: #2a2d33;
+    color: #989898;
+    width: 20%;
+    max-width: 190px;
+    position: relative;
+    animation-name: growRight;
+    animation-duration: .2s; }
+    content #sideNav .header {
+      background: #51d2b7;
+      color: white; }
+      content #sideNav .header h3 {
+        font-size: 2em; }
+        content #sideNav .header h3.show-shrink {
+          display: none; }
+    content #sideNav #mainMenu {
+      position: relative; }
+      content #sideNav #mainMenu .shrink {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 11px 10px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white; }
+    content #sideNav h5 {
+      font-size: 10px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #3c3f44;
+      color: #6a6c6f;
+      padding: 20px 0 8px 23px; }
+    content #sideNav li, content #sideNav #mainContent .center-content .social .recent-items row p, content #mainContent .center-content .social .recent-items row #sideNav p, content #sideNav #mainContent .center-content .social .recent-items column p, content #mainContent .center-content .social .recent-items column #sideNav p {
+      color: #9c9d9f;
+      font-size: 16px;
+      padding: 8px 0 8px 23px; }
+      content #sideNav li.current, content #sideNav li:hover, content #sideNav #mainContent .center-content .social .recent-items row p:hover, content #mainContent .center-content .social .recent-items row #sideNav p:hover, content #sideNav #mainContent .center-content .social .recent-items column p:hover, content #mainContent .center-content .social .recent-items column #sideNav p:hover, content #sideNav #mainContent .center-content .social .recent-items row p.current, content #mainContent .center-content .social .recent-items row #sideNav p.current, content #sideNav #mainContent .center-content .social .recent-items column p.current, content #mainContent .center-content .social .recent-items column #sideNav p.current {
+        color: white;
+        background: #656c7e; }
+      content #sideNav li:hover, content #sideNav #mainContent .center-content .social .recent-items row p:hover, content #mainContent .center-content .social .recent-items row #sideNav p:hover, content #sideNav #mainContent .center-content .social .recent-items column p:hover, content #mainContent .center-content .social .recent-items column #sideNav p:hover {
+        cursor: pointer; }
+      content #sideNav li i, content #sideNav #mainContent .center-content .social .recent-items row p i, content #mainContent .center-content .social .recent-items row #sideNav p i, content #sideNav #mainContent .center-content .social .recent-items column p i, content #mainContent .center-content .social .recent-items column #sideNav p i {
+        margin-right: 10px; }
+  content #shrinkLeft:checked + #sideNav {
+    width: 50px;
+    animation-name: shrinkLeft;
+    animation-duration: .2s; }
+    content #shrinkLeft:checked + #sideNav span, content #shrinkLeft:checked + #sideNav h5 {
+      display: none; }
+    content #shrinkLeft:checked + #sideNav .hide-shrink {
+      display: none; }
+    content #shrinkLeft:checked + #sideNav .show-shrink {
+      display: block; }
+    content #shrinkLeft:checked + #sideNav .shrink {
+      left: 100%;
+      right: initial;
+      background: rgba(0, 0, 0, 0.1);
+      transform: rotate(180deg);
+      color: black; }
+    content #shrinkLeft:checked + #sideNav li, content #shrinkLeft:checked + #sideNav #mainContent .center-content .social .recent-items row p, content #mainContent .center-content .social .recent-items row #shrinkLeft:checked + #sideNav p, content #shrinkLeft:checked + #sideNav #mainContent .center-content .social .recent-items column p, content #mainContent .center-content .social .recent-items column #shrinkLeft:checked + #sideNav p {
+      padding-left: 17px; }
+  content #mainContent {
+    background: #f7f7f7;
+    width: 80%;
+    flex-grow: 2; }
+    content #mainContent .header {
+      background: #fff;
+      color: black;
+      box-shadow: rgba(0, 0, 0, 0.4) 2px 0px 5px;
+      z-index: 99; }
+      content #mainContent .header .search-holder {
+        justify-content: space-between;
+        flex-grow: 2;
+        padding: 0 25px 0 45px; }
+        content #mainContent .header .search-holder .input-holder {
+          position: relative; }
+          content #mainContent .header .search-holder .input-holder .in-search {
+            position: absolute;
+            right: 40px;
+            top: 12px;
+            color: #ccc; }
+          content #mainContent .header .search-holder .input-holder .out-search {
+            padding: 11px 7px 12px;
+            background: #bdc2ca;
+            color: white;
+            margin-left: -5px;
+            border-radius: 0 5px 5px 0; }
+        content #mainContent .header .search-holder input {
+          padding: 12px 0 12px 15px;
+          background: #f7f7f7;
+          border: none;
+          border-radius: 5px 0 0 5px;
+          width: 400px; }
+          content #mainContent .header .search-holder input:focus {
+            outline: none; }
+        content #mainContent .header .search-holder .red-button {
+          background: #e6614f;
+          border: none;
+          color: white;
+          padding: 12px 20px; }
+          content #mainContent .header .search-holder .red-button i {
+            margin-left: 15px; }
+      content #mainContent .header .icons {
+        align-self: stretch;
+        background: #fafafa;
+        align-items: center; }
+        content #mainContent .header .icons i {
+          padding: 0 15px; }
+      content #mainContent .header .user {
+        padding: 0 15px;
+        align-items: center; }
+        content #mainContent .header .user .user-name {
+          margin-right: 15px;
+          font-weight: bold; }
+    content #mainContent .center-content {
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: space-between;
+      flex-grow: 2; }
+      content #mainContent .center-content .dashboard {
+        flex-grow: 2; }
+        content #mainContent .center-content .dashboard h1 {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          align-items: center;
+          height: 75px;
+          padding-left: 50px;
+          font-size: 2em; }
+        content #mainContent .center-content .dashboard .stats {
+          background: #fff;
+          height: 162px; }
+          content #mainContent .center-content .dashboard .stats > column {
+            border-right: 1px solid #f7f7f7;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            align-items: center; }
+            content #mainContent .center-content .dashboard .stats > column > row, content #mainContent .center-content .dashboard .stats > column > column {
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              align-items: center; }
+            content #mainContent .center-content .dashboard .stats > column:last-child {
+              border-right: none; }
+            content #mainContent .center-content .dashboard .stats > column h1 {
+              padding: 0;
+              font-size: 75px;
+              font-family: 'Open Sans Condensed', sans-serif;
+              font-weight: normal;
+              -webkit-align-items: baseline;
+              -moz-align-items: baseline;
+              -ms-align-items: baseline;
+              align-items: baseline; }
+            content #mainContent .center-content .dashboard .stats > column i {
+              padding: 5px;
+              margin-right: 10px;
+              border: 1px solid #f4f4f4; }
+            content #mainContent .center-content .dashboard .stats > column .dash-title {
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: 12px; }
+            content #mainContent .center-content .dashboard .stats > column .dash-freq {
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: 12px;
+              color: #d1d4d9; }
+        content #mainContent .center-content .dashboard .posts {
+          padding: 35px 45px 20px; }
+          content #mainContent .center-content .dashboard .posts .col-title {
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            margin-bottom: 15px;
+            height: 26px;
+            justify-content: space-between; }
+            content #mainContent .center-content .dashboard .posts .col-title span, content #mainContent .center-content .dashboard .posts .col-title #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .col-title h5 {
+              font-size: 12px; }
+              content #mainContent .center-content .dashboard .posts .col-title span:first-child, content #mainContent .center-content .dashboard .posts .col-title #shrinkLeft:checked + #sideNav h5:first-child, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .col-title h5:first-child {
+                color: #7e7f80;
+                font-weight: bold;
+                flex-grow: 2; }
+              content #mainContent .center-content .dashboard .posts .col-title span.gear-icon, content #mainContent .center-content .dashboard .posts .col-title #shrinkLeft:checked + #sideNav h5.gear-icon, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .col-title h5.gear-icon {
+                font-size: 26px;
+                padding: 3px;
+                color: #c1c1c1;
+                margin: 0; }
+          content #mainContent .center-content .dashboard .posts .corp-message {
+            margin-right: 25px; }
+          content #mainContent .center-content .dashboard .posts .message {
+            border: 1px solid #e6e6e6;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 20px; }
+            content #mainContent .center-content .dashboard .posts .message .user-info, content #mainContent .center-content .dashboard .posts .message .message-text, content #mainContent .center-content .dashboard .posts .message .comment-count, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text, content #mainContent .center-content .dashboard .posts .message .leave-comment {
+              padding: 15px 20px;
+              background: white;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              align-items: center; }
+              content #mainContent .center-content .dashboard .posts .message .user-info .user-image, content #mainContent .center-content .dashboard .posts .message .message-text .user-image, content #mainContent .center-content .dashboard .posts .message .comment-count .user-image, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text .user-image, content #mainContent .center-content .dashboard .posts .message .leave-comment .user-image {
+                margin-right: 10px; }
+              content #mainContent .center-content .dashboard .posts .message .user-info h2, content #mainContent .center-content .dashboard .posts .message .message-text h2, content #mainContent .center-content .dashboard .posts .message .comment-count h2, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text h2, content #mainContent .center-content .dashboard .posts .message .leave-comment h2 {
+                margin-bottom: 5px;
+                font-size: 14px; }
+              content #mainContent .center-content .dashboard .posts .message .user-info span, content #mainContent .center-content .dashboard .posts .message .message-text span, content #mainContent .center-content .dashboard .posts .message .comment-count span, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text span, content #mainContent .center-content .dashboard .posts .message .leave-comment span, content #mainContent .center-content .dashboard .posts .message .user-info #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .user-info h5, content #mainContent .center-content .dashboard .posts .message .message-text #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .message-text h5, content #mainContent .center-content .dashboard .posts .message .comment-count #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .comment-count h5, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .user-comment .comment-text h5, content #mainContent .center-content .dashboard .posts .message .leave-comment #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .leave-comment h5 {
+                font-size: 12px;
+                color: #cacaca; }
+            content #mainContent .center-content .dashboard .posts .message .post-image {
+              width: 100%; }
+            content #mainContent .center-content .dashboard .posts .message .comment-count {
+              background: transparent;
+              border-bottom: 1px solid white; }
+            content #mainContent .center-content .dashboard .posts .message .user-comment {
+              background: transparent; }
+              content #mainContent .center-content .dashboard .posts .message .user-comment .user-info, content #mainContent .center-content .dashboard .posts .message .user-comment .message-text, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-count, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text, content #mainContent .center-content .dashboard .posts .message .user-comment .leave-comment {
+                background: transparent; }
+                content #mainContent .center-content .dashboard .posts .message .user-comment .user-info > column, content #mainContent .center-content .dashboard .posts .message .user-comment .message-text > column, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-count > column, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text > column, content #mainContent .center-content .dashboard .posts .message .user-comment .leave-comment > column {
+                  width: 100%; }
+                content #mainContent .center-content .dashboard .posts .message .user-comment .user-info h2, content #mainContent .center-content .dashboard .posts .message .user-comment .message-text h2, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-count h2, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text h2, content #mainContent .center-content .dashboard .posts .message .user-comment .leave-comment h2 {
+                  font-size: 12px; }
+                  content #mainContent .center-content .dashboard .posts .message .user-comment .user-info h2 span, content #mainContent .center-content .dashboard .posts .message .user-comment .message-text h2 span, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-count h2 span, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text h2 span, content #mainContent .center-content .dashboard .posts .message .user-comment .leave-comment h2 span, content #mainContent .center-content .dashboard .posts .message .user-comment .user-info h2 #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .user-comment .user-info h2 h5, content #mainContent .center-content .dashboard .posts .message .user-comment .message-text h2 #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .user-comment .message-text h2 h5, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-count h2 #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .user-comment .comment-count h2 h5, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text h2 #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .user-comment .comment-text h2 h5, content #mainContent .center-content .dashboard .posts .message .user-comment .leave-comment h2 #shrinkLeft:checked + #sideNav h5, content #shrinkLeft:checked + #sideNav #mainContent .center-content .dashboard .posts .message .user-comment .leave-comment h2 h5 {
+                    font-size: 10px;
+                    margin-left: 8px; }
+                content #mainContent .center-content .dashboard .posts .message .user-comment .user-info .user-image, content #mainContent .center-content .dashboard .posts .message .user-comment .message-text .user-image, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-count .user-image, content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text .user-image, content #mainContent .center-content .dashboard .posts .message .user-comment .leave-comment .user-image {
+                  height: 33px;
+                  width: 37px; }
+              content #mainContent .center-content .dashboard .posts .message .user-comment .comment-text {
+                font-size: 12px;
+                padding: 0;
+                width: 100%; }
+            content #mainContent .center-content .dashboard .posts .message .leave-comment {
+              background: transparent; }
+              content #mainContent .center-content .dashboard .posts .message .leave-comment .user-image {
+                height: 33px;
+                width: 33px;
+                -webkit-align-self: flex-start;
+                -moz-align-self: flex-start;
+                -ms-align-self: flex-start;
+                align-self: flex-start; }
+              content #mainContent .center-content .dashboard .posts .message .leave-comment .comment-wrap {
+                -webkit-flex-grow: 2;
+                -moz-flex-grow: 2;
+                -ms-flex-grow: 2;
+                flex-grow: 2; }
+                content #mainContent .center-content .dashboard .posts .message .leave-comment .comment-wrap .comment-buttons {
+                  margin-top: 10px; }
+                  content #mainContent .center-content .dashboard .posts .message .leave-comment .comment-wrap .comment-buttons .submit {
+                    border-color: #68b1d5;
+                    color: #68b1d5; }
+                    content #mainContent .center-content .dashboard .posts .message .leave-comment .comment-wrap .comment-buttons .submit:hover {
+                      background: #68b1d5;
+                      color: #FFF; }
+            content #mainContent .center-content .dashboard .posts .message .attachment {
+              padding: 0 10px;
+              background: white;
+              border-top: 1px solid #f2f2f2;
+              border-bottom: 1px solid #f2f2f2;
+              -webkit-justify-content: space-around;
+              -moz-justify-content: space-around;
+              -ms-justify-content: space-around;
+              justify-content: space-around;
+              -ms-flex-pack: space-around;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              align-items: center;
+              padding: 10px 0; }
+              content #mainContent .center-content .dashboard .posts .message .attachment .paperclip {
+                font-size: 22px; }
+            content #mainContent .center-content .dashboard .posts .message input {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              -webkit-flex-grow: 2;
+              -moz-flex-grow: 2;
+              -ms-flex-grow: 2;
+              flex-grow: 2;
+              padding: 5px;
+              border-radius: 5px;
+              border-style: none;
+              border: 1px solid #bbb; }
+              content #mainContent .center-content .dashboard .posts .message input:focus {
+                outline: none; }
+            content #mainContent .center-content .dashboard .posts .message textarea {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              min-height: 120px;
+              resize: none;
+              padding: 5px;
+              border-radius: 5px; }
+      content #mainContent .center-content .social {
+        max-width: 295px;
+        background: #ededed;
+        padding: 60px 25px;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        animation-name: growLeft;
+        animation-duration: .2s; }
+        content #mainContent .center-content .social .shrink {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 11px 10px;
+          background: rgba(0, 0, 0, 0.1); }
+        content #mainContent .center-content .social h4 {
+          font-size: 8px;
+          text-transform: uppercase;
+          border-bottom: 1px solid #dadada;
+          color: #ababab;
+          margin: 10px 0; }
+        content #mainContent .center-content .social .follow-img {
+          display: inline-block;
+          width: 33px;
+          height: 33px;
+          border-radius: 2px;
+          background: green;
+          margin: 0 1px; }
+        content #mainContent .center-content .social li, content #mainContent .center-content .social .recent-items row p, content #mainContent .center-content .social .recent-items column p {
+          font-size: 12px;
+          font-weight: bold;
+          margin-bottom: 5px; }
+        content #mainContent .center-content .social .recent-items row, content #mainContent .center-content .social .recent-items column {
+          padding: 5px 0;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          align-items: center; }
+          content #mainContent .center-content .social .recent-items row i, content #mainContent .center-content .social .recent-items column i {
+            font-size: 16px;
+            width: 30px;
+            color: #a0a2a9; }
+      content #mainContent .center-content #shrinkRight:checked + .social {
+        width: 0;
+        padding: 0;
+        animation-name: shrinkRight;
+        animation-duration: .2s; }
+        content #mainContent .center-content #shrinkRight:checked + .social .shrink {
+          right: 100%;
+          left: initial;
+          transform: rotate(180deg); }
+        content #mainContent .center-content #shrinkRight:checked + .social > div {
+          display: none; }
 

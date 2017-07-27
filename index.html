@@ -4,20 +4,351 @@
     <title></title>
 	<meta charset="utf-8" />
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
+    <link href="styles/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 <body>
     <content>
+        <input type="checkbox" name="shrink-left" id="shrinkLeft" class="hide" />
         <column id="sideNav">
-            <div class="header"></div>
-            <div id="mainMenu"></div>
-            <div id="subMenu"></div>
+            <row class="header">
+                <h3 class="hide-shrink">Vonigo</h3>
+                <h3 class="show-shrink">V</h3>
+            </row>
+            <div id="mainMenu">
+                <label for="shrinkLeft" class="shrink">
+                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                </label>
+                <h5>Main</h5>
+                <ul>
+                    <li class="current"><i class="fa fa-tachometer" aria-hidden="true"></i><span>Dashboard</span></li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i><span>Calls</span></li>
+                    <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Quotes</span></li>
+                    <li><i class="fa fa-users" aria-hidden="true"></i><span>Leads</span></li>
+                    <li><i class="fa fa-user-circle-o" aria-hidden="true"></i><span>Accounts</span></li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Jobs</span></li>
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i><span>Schedule</span></li>
+                    <li><i class="fa fa-file-o" aria-hidden="true"></i><span>Invoices</span></li>
+                    <li><i class="fa fa-files-o" aria-hidden="true"></i><span>Cases</span></li>
+                    <li><i class="fa fa-list" aria-hidden="true"></i><span>Reports</span></li>
+                </ul>
+            </div>
+            <div id="moreMenu">
+                <h5>More</h5>
+                <ul>
+                    <li><i class="fa fa-book" aria-hidden="true"></i><span>Library</span></li>
+                    <li><i class="fa fa-id-card-o" aria-hidden="true"></i><span>Directory</span></li>
+                    <li><i class="fa fa-question-circle" aria-hidden="true"></i><span>Help</span></li>
+                </ul>
+            </div>
+            <div id="settingsMenu">
+                <h5>Settings</h5>
+                <ul>
+                    <li><i class="fa fa-building" aria-hidden="true"></i><span>Franchise</span></li>
+                    <li><i class="fa fa-flag" aria-hidden="true"></i><span>Corporate</span></li>
+                    <li><i class="fa fa-cog" aria-hidden="true"></i><span>Setup</span></li>
+                </ul>
+            </div>
         </column>
         <column id="mainContent">
-            <div class="header"></div>
-            <div>
-                <column class="two-thirds"></column>
-                <column class="one-third"></column>
-            </div>
+            <row class="header">
+                <row class="search-holder">
+                    <div class="input-holder">
+                        <input type="text" placeholder="Search" />
+                        <i class="fa fa-caret-down in-search" aria-hidden="true"></i>
+                        <i class="fa fa-search out-search" aria-hidden="true"></i>
+                    </div>
+                    <button class="red-button">Create New
+                        <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                </row>
+                <row class="icons">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                </row>
+                <row class="user">
+                    <span class="user-name">Stephanie</span>
+                    <span class="user-image"></span>
+                </row>
+            </row>
+            <row class="center-content">
+                <column class="two-thirds dashboard">
+                    <h1>Dashboard</h1>
+                    <row class="stats">
+                        <column class="one-fifth">
+                            <div>
+                                <row>
+                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                    <column>
+                                        <span class="dash-title">New Clients</span>
+                                        <span class="dash-freq">Last 7 Days</span>
+                                    </column>
+                                </row>
+                                <h1 class="large-count">25</h1>
+                            </div>
+                        </column>
+                        <column class="one-fifth">
+                            <div>
+                                <row>
+                                    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                                    <column>
+                                        <span class="dash-title">New Work Orders</span>
+                                        <span class="dash-freq">Last 24 hours</span>
+                                    </column>
+                                </row>
+                                <h1 class="large-count">13</h1>
+                            </div>
+                        </column>
+                        <column class="one-fifth">
+                            <div>
+                                <row>
+                                    <i class="fa fa-th-list" aria-hidden="true"></i>
+                                    <column>
+                                        <span class="dash-title">New Quotes</span>
+                                        <span class="dash-freq">Last Month</span>
+                                    </column>
+                                </row>
+                                <h1 class="large-count">249</h1>
+                            </div>
+                        </column>
+                        <column class="one-fifth">
+                            <div>
+                                <row>
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                    <column>
+                                        <span class="dash-title">New Invoices</span>
+                                        <span class="dash-freq">Today</span>
+                                    </column>
+                                </row>
+                                <h1 class="large-count">68</h1>
+                            </div>
+                        </column>
+                        <column class="one-fifth">
+                            <div>
+                                <row>
+                                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                                    <column>
+                                        <span class="dash-title">Open Cases</span>
+                                        <span class="dash-freq">Since Launch</span>
+                                    </column>
+                                </row>
+                                <h1 class="large-count">1898</h1>
+                            </div>
+                        </column>
+                    </row>
+                    <row class="posts">
+                        <column class="half corp-message">
+                            <row class="col-title">
+                                <span>Corporate Message Board</span>
+                                <span class="post-button">Post Message</span>
+                                <span class="gear-icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                            </row>
+                            <div class="message">
+                                <row class="user-info">
+                                    <span class="user-image"></span>
+                                    <div>
+                                        <h2>John Doe</h2>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </row>
+                                <p class="message-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a urna tempor, interdum felis non, dictum ex. Curabitur eu ligula aliquam, facilisis quam et, elementum enim. Praesent nec purus venenatis, tempor libero in, facilisis lorem. Duis tincidunt dapibus lectus eget vestibulum. Donec tellus nibh, faucibus sed purus ut, faucibus maximus sem. Ut dictum odio aliquam neque porta congue. Curabitur pretium quam quis mi pulvinar, ac dignissim mi auctor.
+                                </p>
+                                <img src="images/KsYpXaP.gif" title="nice meme" class="post-image"/>
+                                <p class="comment-count">View 3 more comments</p>
+                                <div class="user-comment">
+
+                                    <row class="user-info">
+                                        <span class="user-image"></span>
+                                        <column>
+                                            <h2>John Doe<span>5:34pm</span></h2>
+                                            <p class="comment-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </column>
+                                    </row>
+                                </div>
+                                <row class="leave-comment">
+                                    <input class="user-input" type="text" placeholder="Add your comment..." />
+                                </row>
+                            </div>
+
+                            <div class="message">
+                                <row class="user-info">
+                                    <span class="user-image"></span>
+                                    <div>
+                                        <h2>Jane Doe</h2>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </row>
+                                <p class="message-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a urna tempor, interdum felis non, dictum ex. Curabitur eu ligula aliquam, facilisis quam et, elementum enim.
+                                </p>
+                                <row class="attachment">
+                                    <i class="fa fa-paperclip paperclip" aria-hidden="true"></i>
+                                    <strong>Vonigo_app_9ht.psd</strong>
+                                    <strong>Photoshop File</strong>
+                                    <span>13mb</span>
+                                </row>
+                                <p class="comment-count">View 3 more comments</p>
+                                <div class="user-comment">
+
+                                    <row class="user-info">
+                                        <span class="user-image"></span>
+                                        <column>
+                                            <h2>John Doe<span>5:34pm</span></h2>
+                                            <p class="comment-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis tincidunt dapibus lectus eget vestibulum. Donec tellus nibh, faucibus sed purus ut, faucibus maximus sem. Ut dictum odio aliquam neque porta congue. Curabitur pretium quam quis mi pulvinar, ac dignissim mi auctor.
+                                            </p>
+                                        </column>
+                                    </row>
+                                </div>
+                                <row class="leave-comment">
+                                    <input class="user-input" type="text" placeholder="Add your comment..." />
+                                </row>
+                            </div>
+                        </column>
+                        <column class="half net-messages">
+                            <row class="col-title">
+                                <span>Your Network</span>
+                            </row>
+                            <div class="message">
+                                <row class="user-info">
+                                    <span class="user-image"></span>
+                                    <div>
+                                        <h2>Jane Doe</h2>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </row>
+                                <p class="message-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a urna tempor, interdum felis non, dictum ex. Curabitur eu ligula aliquam, facilisis quam et, elementum enim.
+                                </p>
+                                <row class="attachment">
+                                    <i class="fa fa-paperclip paperclip" aria-hidden="true"></i>
+                                    <strong>Vonigo_app_9ht.psd</strong> 
+                                    <strong>Photoshop File</strong>
+                                    <span>13mb</span>
+                                </row>
+                                <p class="comment-count">View 3 more comments</p>
+                                <div class="user-comment">
+
+                                    <row class="user-info">
+                                        <span class="user-image"></span>
+                                        <column>
+                                            <h2>John Doe<span>5:34pm</span></h2>
+                                            <p class="comment-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis tincidunt dapibus lectus eget vestibulum. Donec tellus nibh, faucibus sed purus ut, faucibus maximus sem. Ut dictum odio aliquam neque porta congue. Curabitur pretium quam quis mi pulvinar, ac dignissim mi auctor.
+                                            </p>
+                                        </column>
+                                    </row>
+                                </div>
+                                <row class="leave-comment">
+                                    <span class="user-image"></span>
+                                    <column class="comment-wrap">
+                                        <textarea class="enter-comment"></textarea>
+
+                                        <row class="comment-buttons">
+                                            <span class="post-button submit">Post Message</span>
+                                            <span class="post-button">Cancel</span>
+                                        </row>
+                                    </column>
+                                </row>
+                            </div>
+                            <div class="message">
+                                <row class="user-info">
+                                    <span class="user-image"></span>
+                                    <div>
+                                        <h2>John Doe</h2>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </row>
+                                <p class="message-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a urna tempor, interdum felis non, dictum ex. Curabitur eu ligula aliquam, facilisis quam et, elementum enim. Praesent nec purus venenatis, tempor libero in, facilisis lorem. Duis tincidunt dapibus lectus eget vestibulum. Donec tellus nibh, faucibus sed purus ut, faucibus maximus sem. Ut dictum odio aliquam neque porta congue. Curabitur pretium quam quis mi pulvinar, ac dignissim mi auctor.
+                                </p>
+                                <img src="images/46459600.jpg" title="nice meme" class="post-image" />
+                                <p class="comment-count">View 3 more comments</p>
+                                <div class="user-comment">
+
+                                    <row class="user-info">
+                                        <span class="user-image"></span>
+                                        <column>
+                                            <h2>John Doe<span>5:34pm</span></h2>
+                                            <p class="comment-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </column>
+                                    </row>
+                                </div>
+                                <row class="leave-comment">
+                                    <input class="user-input" type="text" placeholder="Add your comment..." />
+                                </row>
+                            </div>
+                        </column>
+                    </row>
+                </column>
+                <input type="checkbox" id="shrinkRight" class="hide" />
+                <column class="one-third social">
+                    <label class="shrink" for="shrinkRight">
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </label>
+                    <div class="following">
+                        <h4>following</h4>
+                        <row>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                        </row>
+                    </div>
+                    <div class="followers">
+                        <h4>followers</h4>
+                        <row>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                            <span class="follow-img"></span>
+                        </row>
+                    </div>
+                    <div class="recent-items">
+                        <h4>recent items</h4>
+                        <row>
+                            <i class="fa fa-files-o" aria-hidden="true"></i> 
+                            <p>Work Order, ID:823-1</p>
+                        </row>
+                        <row>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p> Call Lorem Ipsum</p>
+                        </row>
+                    </div>
+                    <div class="links">
+                        <h4>links</h4>
+                        <ul>
+                            <li>Corporate Website</li>
+                            <li>Google Analytics</li>
+                            <li>Corporate Google Docs</li>
+                            <li>Book Online</li>
+                            <li>Quote Functionality Update</li>
+                            <li>Help Manuals</li>
+                            <li>Mobile Video Game Theater Homepage</li>
+                        </ul>
+                    </div>
+                    <div class="discussion-groups">
+                        <h4>discussion groups</h4>
+                        <ul>
+                            <li>Marketing Strategy</li>
+                            <li>B2B</li>
+                            <li>Operational Standards</li>
+                            <li>How to Discussion Group</li>
+                        </ul>
+                    </div>
+                </column>
+            </row>
         </column>
     </content>
     

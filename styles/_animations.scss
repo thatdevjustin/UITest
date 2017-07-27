@@ -1,0 +1,16 @@
+﻿@keyframes shrinkLeft{
+    from {width: 20%;}
+    to{width:50px;}
+}
+@keyframes growRight{
+    from{width: 50px;}
+    to{width:20%;}
+}
+@keyframes shrinkRight{
+    from{width: 33%;}
+    to{width: 0;}
+}
+@keyframes growLeft{
+    from{width:0;}
+    to{width: 33%;}
+}
